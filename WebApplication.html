@@ -1,0 +1,22 @@
+
+  <h1>VVIT-IT</h1>
+<h2>Digital Notice Board</h2>
+</div>
+
+<div data-role="content">
+
+<form method="post" action="change">
+  <label for="slider-1">Enter Notice to Send:</label>
+  <input type="text" name="lcd" id="lcd" />  
+  <br />
+  
+  <input type="submit" value="Submit" />
+</form>
+
+{% if value %}
+<p>Notice  sent: {{ value }}</p>
+{% endif %}
+
+</div>
+
+
